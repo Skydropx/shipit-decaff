@@ -1,7 +1,7 @@
 {
-  "name": "shipit",
+  "name": "shipit-decaf",
   "version": "1.0.2",
-  "description": "This module allows you to connect to many shipping carriers like UPS and FedEx and download tracking data for your packages in a common schema",
+  "description": "This module allows you to connect to many shipping carriers like UPS and FedEx and download tracking data for your packages in a common schema. shipit-decaff is a decaffeinated fork from sailrish/shipit",
   "main": "lib/main.js",
   "directories": {
     "test": "test"
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sailrish/shipit.git"
+    "url": "https://github.com/ecelis/shipit-decaff.git"
   },
   "keywords": [
     "FedEx",
@@ -44,10 +44,10 @@
     "Package",
     "Shipping"
   ],
-  "author": "Rishi Arora",
+  "author": "Ernesto Celis",
   "license": "MIT",
-  "gitHead": "98fae33441e8059229d7c824d29665b57322b13d",
+  "gitHead": "4175c38172ba1f9c7d77a1c89526c5417897269f",
   "bugs": {
-    "url": "https://github.com/sailrish/shipit/issues"
+    "url": "https://github.com/ecelis/shipit-decaff/issues"
   }
 }
