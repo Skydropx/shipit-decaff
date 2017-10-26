@@ -48,54 +48,47 @@ npm install shipit
 
 Use it to initialize the shipper clients with your account credentials.
 ```coffeescript
-{
-  UpsClient,
-  FedexClient,
-  UspsClient,
-  DhlClient,
-  LasershipClient,
-  OnTracClient,
-  UpsMiClient,
-  DhlGmClient,
-  CanadaPostClient,
-  AmazonClient,
-  PrestigeClient
-} = require 'shipit'
+const shipit = require('shipit');
 
-ups = new UpsClient
-  licenseNumber: '1C999A999B999999'
-  userId: 'shipit-user'
+const ups = new shipt.UpsClient({
+  licenseNumber: '1C999A999B999999',
+  userId: 'shipit-user',
   password: 'shhh-secret'
+});
 
-fedex = new FedexClient
-  key: 'xyxyxyxyabababab'
-  password: 'asdfawasfdasdfasdf1'
-  account: '123456789'
+const fedex = new FedexClient({
+  key: 'xyxyxyxyabababab',
+  password: 'asdfawasfdasdfasdf1',
+  account: '123456789',
   meter: '99999999'
+});
 
-usps = new UspsClient
-  userId: '590XABCR3210'
+const usps = new UspsClient({
+  userId: '590XABCR3210',
   clientIp: '10.5.5.1'
+});
 
-lsClient = new LasershipClient()
+const lsClient = new shipit.LasershipClient();
 
-dhlClient = new DhlClient
-  userId: 'SHIPI_79999'
+const dhlClient = new DhlClient({
+  userId: 'SHIPI_79999',
   password: 'shipit'
+});
 
-dhlgmClient = new DhlGmClient()
+const dhlgmClient = new DhlGmClient();
 
-canadaPostClient: new CanadaPostClient
-  username: 'maple-leafs'
+const canadaPostClient = new CanadaPostClient({
+  username: 'maple-leafs',
   password: 'zamboni'
+});
 
-onTrac = new OnTracClient()
+const onTrac = new OnTracClient();
 
-upsmi = new UpsMiClient()
+const upsmi = new UpsMiClient();
 
-amazonClient = new AmazonClient()
+const amazonClient = new AmazonClient();
 
-prestige = new PrestigeClient()
+const prestige = new PrestigeClient();
 ```
 
 Use an initialized client to request tracking data.
